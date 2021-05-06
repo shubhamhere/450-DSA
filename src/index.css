@@ -34,6 +34,16 @@ code {
   padding-left: 1rem;
   padding-right: 1rem;
 }
+.space-x-1 > :not([hidden]) ~ :not([hidden]) {
+  color: burlywood;
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.25rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.space-x-1 > :not([hidden]) ~ :not([hidden]):hover {
+color: #000;
+}
+
 @media only screen 
 and (min-device-width : 300px) 
 and (max-device-width : 1280px){
